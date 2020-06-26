@@ -6,7 +6,7 @@ Simple two-player board-game based off the [Great Dinosaur Rush](https://www.wik
 
 In this assignment, you will write a program to play a simplified, custom board game called **"The Bone Wars"**. In this game, we will assume that there are two players Cope, and Marsh (the computer will not play the game) that are positioned on opposite ends of an island in the ocean, as shown in the figure below. The island is a square shape platform made of n x n elements. The archeologists strive to find all of the hidden bones. At the end of the game, the player with more bone score wins the game. **The players start the game with the same energy.** With each move, **they spend one energy and require supplements such as food and water.** Furthermore, in this initially peaceful looking island, unfortunately there are some hidden booby traps that would decrease the energy of the players. The energy of the player keeps on reducing in case they jump on a cell with a trap. **Once the player hits a trap, in addition to usual one energy spent, an additional 0.25 unit is reduced until the player finds medical supplies.** If one of the players dies (energy reaches 0) s/he can still win the game. The other player may still need to collect bones for a better score. Of course, in case one of the players collect more than half of the available bone score, the game ends with victory for this player.
 
-![Image of Game Board]()
+![Image of Game Board](https://github.com/JDMukiibs/The-Bone-Wars/blob/master/GameBoard.png?raw=true)
 
 The hidden elements can be one of the following:
 * Bones
