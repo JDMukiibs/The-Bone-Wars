@@ -44,16 +44,13 @@ Trap | **Bad News!!!** | 1 | T
 After the resources have been positioned, the game proceeds in a series of rounds. In each round, each player takes a turn to announce a target cell in the grid. The computer then announces the outcome of the random numbers and the actions to be followed. The grid is then updated accordingly.
 
 ## Implementation:
--------
 Create a base abstract class **"Resources"** which will have member variables for size and representing character. There are five sub-classes of resources (trap included) for five distinct types (Food and bones are further divided, but you are free in implementing these). The resources gathered by each player will be held in a structure (You can use any structure e.g. linked list, array, vector etc.). In each turn, the structure used to keep the resources will be traversed to calculate the total score, energy and current condition (is the player hurt from the trap and in need for medical attention or not). **For each three Food items in the structure, the energy can be increased one point in each round since the archaeologist with a good diet would develop a stronger immune system to survive.**
 
 An **"Archeologist"** class will be created for each player. Each player is going to have a list of gathered resources. A "Grid" class will also be created, which will be associated with the most up to date state of the island. Each player object will have access to the same grid object.
 
 ## Deployment of Resources:
-------
 The deploy_resources function of the grid will randomly deploy resources at the beginning of the game. The resources may be placed vertically, horizontally or diagonally.
 
 ## Gathering:
-------
 Each player is going to gather in turns. Before and after the choosing the coordinates, the last version of grids will be shown. The program should not allow the players to gather from the same coordinates more than once.
 If one of the player collects more than half of the available bone scores, the game will end and the program will show the winner and looser with the details of the resources gathered.
