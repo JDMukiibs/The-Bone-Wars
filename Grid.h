@@ -26,6 +26,7 @@ public:
     //and for that purpose I have made it a public member variable because each player object should be able to know which coordinates have been used.
 public:
     explicit Grid(int);//default size of array should at least be 5x5 so with this overloaded constructor I have declared my defaults too
+    //Need to add copy constructor and assignment operator
     ~Grid();//We will need a destructor here to properly deal with freeing up memory used when creating the array.
     int getsize()const;
     void deploy_resources();
