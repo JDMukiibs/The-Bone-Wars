@@ -18,6 +18,7 @@ protected:
     Grid* game_board;
 public:
     Archaeologist(Grid *, const char *, int);
+    //Need to have a copy const, destructor, and assignment operator,
     ~Archaeologist();
     bool coord_search(int, int);
     void effect_calculator(int,int,int);
